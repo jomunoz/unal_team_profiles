@@ -5,7 +5,8 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+# gem 'mysql2'
+gem 'pg'
 gem 'nokogiri'
 
 
@@ -29,6 +30,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'rails_12factor', group: :production
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -43,3 +46,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+ruby '1.9.3'
