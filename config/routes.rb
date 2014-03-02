@@ -1,6 +1,7 @@
 TeamProfiles::Application.routes.draw do
 
   resources :job_posts
+  root :to => 'job_posts#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
