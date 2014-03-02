@@ -32,6 +32,5 @@ class JobPost < ActiveRecord::Base
   def host
     URI(self.source).host
   end
-  private :host
 
 end
