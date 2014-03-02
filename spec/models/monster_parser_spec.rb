@@ -26,6 +26,10 @@ describe MonsterParser do
     it 'returns a hash with the company that published the ad' do
       results[:company].should == 'Infosys International'
     end
+
+    it 'returns a hash with the job location' do
+      results[:location].should == 'New York City, NY 10008'
+    end
   end
 
 end

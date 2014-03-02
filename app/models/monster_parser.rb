@@ -9,7 +9,8 @@ class MonsterParser
       industry: industry,
       experience: experience,
       full_profile: full_profile,
-      company: company }
+      company: company,
+      location: location }
   end
 
   def short_description 
@@ -36,4 +37,9 @@ class MonsterParser
     @doc.at_css("[itemprop='hiringOrganization']").text
   end
   private :company
+
+  def location
+    @doc.at_css("[itemprop='jobLocation']").text
+  end
+  private :location
 end
