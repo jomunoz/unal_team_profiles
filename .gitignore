@@ -1,5 +1,4 @@
 .bundle
 *.swp
 log/*
-config/database.yml
 tmp/*
