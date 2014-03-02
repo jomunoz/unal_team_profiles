@@ -1,0 +1,17 @@
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <%= form_for(@job_post) do |form| %>
+      <div class="form-group">
+        <%= form.label :source, 'Dirección del anuncio' %>
+        <%= form.text_field :source, class: 'form-control' %>
+        <p class="help-block">
+          Es la URL del anuncio en Monster.com
+        </p>
+      <div>
+      <div class="form-actions">
+        <%= form.submit 'Adicionar anuncio', :class => 'btn btn-primary' %>
+        <%= link_to 'Cancelar', job_posts_path, :class => 'btn' %>
+      </div>
+    <% end %>
+  </div>
+</div>

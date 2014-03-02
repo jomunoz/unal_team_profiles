@@ -13,6 +13,17 @@
 
 <body>
   <div class="container">
+    <div class="row-fluid">
+      <div class="span6 offset3">
+        <% if flash[:notice].present? -%> 
+          <p class="alert alert-success"><%= flash[:notice] %></p>
+        <% end -%> 
+        <% if flash[:alert].present? -%> 
+          <p class="alert alert-error"><%= flash[:alert] %></p>
+        <% end -%> 
+      </div>
+    </div>
+
     <%= yield %>
   </div>
 </body>
