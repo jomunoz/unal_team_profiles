@@ -1,0 +1,20 @@
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <h3>
+      Información del anuncio
+    </h3>
+    <dl class="dl-horizontal">
+      <dt>ID</dt><dd><%= @job_post.id %></dd>
+      <dt>Descripción</dt><dd><%= @job_post.description %></dd>
+      <dt>Perfíl completo</dt><dd class="active"><%= @job_post.full_profile %></dd>
+      <dt>Fuente</dt><dd><%= @job_post.host %></dd>
+      <dt>url</dt><dd><%= link_to @job_post.source, @job_post.source %></dd>
+      <dt>Industria</dt><dd><%= @job_post.industry %></dd>
+      <dt>Compañia</dt><dd><%= @job_post.company %></dd>
+      <dt>Lugar</dt><dd><%= @job_post.location %></dd>
+      <dt>Experiencia requerida</dt><dd><%= @job_post.experience %></dd>
+    </dl> 
+    <%= link_to 'Atras', job_posts_path, class: 'btn' %>
+  </div>
+</div>
+

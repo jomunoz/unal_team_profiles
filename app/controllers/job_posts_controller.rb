@@ -9,6 +9,10 @@ class JobPostsController < ApplicationController
     @job_post = JobPost.new
   end
 
+  def show
+    @job_post = JobPost.find(params[:id])
+  end
+
   def create
     @job_post = JobPost.new(params[:job_post])
     begin
